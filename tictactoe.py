@@ -135,8 +135,8 @@ def check_diagonal_win():
     diag_2 = board[6] == board[4] == board[2] != "_"
 
 
-    # if diag_1 or diag_2:
-    #     game_is_active = False
+    if diag_1 or diag_2:
+         game_is_active = False
     if diag_1:
         return board[0]
     elif diag_2:
